@@ -1,0 +1,43 @@
+﻿Build started 03/04/2013 10:48:36 a.m..
+     1>Project "F:\projects\tycoon\InterfaceJavaISO\libJson\libJson.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "x64\Release\libJson.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       GenerateTargetFrameworkMonikerAttribute:
+       Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\CL.exe /c /I"F:\projects\hostt\ACE-6.1.7\ACE_wrappers" /I"C:\Program Files\Java\jdk1.7.0_17\include" /I"C:\Program Files\Java\jdk1.7.0_17\include\win32" /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /Zi /clr /nologo /W3 /WX- /O2 /D WIN32 /D NDEBUG /D _WINDLL /D _UNICODE /D UNICODE /EHa /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Release\\" /Fd"x64\Release\vc100.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /errorReport:prompt InterfaceJavaISO.cpp /clr:nostdlib 
+         InterfaceJavaISO.cpp
+     1>f:\projects\tycoon\interfacejavaiso\libjson\InterfaceJavaISO.h(34): warning C4190: 'InterfaceJavaISO_NMC_BuildIsoMessage' has C-linkage specified, but returns UDT 'std::basic_string<_Elem,_Traits,_Ax>' which is incompatible with C
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Ax=std::allocator<char>
+                 ]
+     1>InterfaceJavaISO.cpp(1434): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+         All outputs are up-to-date.
+       ResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"F:\projects\tycoon\InterfaceJavaISO\libJson\x64\Release\libJson.dll" /INCREMENTAL:NO /NOLOGO /LIBPATH:"F:\projects\hostt\ACE-6.1.7\ACE_wrappers\lib" /LIBPATH:F:\projects\tycoon\InterfaceJavaISO\IsoParser\x64\Release ACE.lib IsoParser.lib /MANIFEST /ManifestFile:"x64\Release\libJson.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"F:\projects\tycoon\InterfaceJavaISO\libJson\x64\Release\libJson.pdb" /TLBID:1 /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X64 /DLL x64\Release\app.res
+         x64\Release\ApiSocket.obj
+         x64\Release\CoreTransaction.obj
+         x64\Release\http_handler.obj
+         x64\Release\InterfaceJavaISO.obj
+         x64\Release\libJson.obj
+         x64\Release\NMCLog.obj
+         x64\Release\tools.obj
+         x64\Release\Transactions.obj
+         "x64\Release\.NETFramework,Version=v4.0.AssemblyAttributes.obj"
+            Creating library F:\projects\tycoon\InterfaceJavaISO\libJson\x64\Release\libJson.lib and object F:\projects\tycoon\InterfaceJavaISO\libJson\x64\Release\libJson.exp
+         libJson.vcxproj -> F:\projects\tycoon\InterfaceJavaISO\libJson\x64\Release\libJson.dll
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"F:\projects\tycoon\InterfaceJavaISO\libJson\x64\Release\libJson.dll;#2" /manifest x64\Release\libJson.dll.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "x64\Release\libJson.unsuccessfulbuild".
+         Touching "x64\Release\libJson.lastbuildstate".
+     1>Done Building Project "F:\projects\tycoon\InterfaceJavaISO\libJson\libJson.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:04.16

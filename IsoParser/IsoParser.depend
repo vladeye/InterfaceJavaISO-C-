@@ -1,0 +1,24 @@
+# depslib dependency file v1.0
+1347744998 source:/home/andres/IsoParser/main.cpp
+	"IsoParser.h"
+	"utility.h"
+	"string.h"
+
+1347749974 /home/andres/IsoParser/IsoParser.h
+	<string.h>
+	<string>
+	<iostream>
+	<sstream>
+	<fstream>
+	<hash_map>
+	<map>
+
+1345751582 /home/andres/IsoParser/utility.h
+	<iostream>
+	<vector>
+	<fstream>
+	<string>
+
+1345751541 source:/home/andres/IsoParser/utility.cpp
+	"utility.h"
+

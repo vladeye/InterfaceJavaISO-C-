@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Release" />
+	<File name="IsoParser.h" open="0" top="0" tabpos="7">
+		<Cursor position="1643" topLine="66" />
+	</File>
+	<File name="main.cpp" open="0" top="0" tabpos="6">
+		<Cursor position="39780" topLine="1046" />
+	</File>
+	<File name="utility.cpp" open="0" top="0" tabpos="2">
+		<Cursor position="783" topLine="0" />
+	</File>
+	<File name="utility.h" open="0" top="0" tabpos="3">
+		<Cursor position="230" topLine="0" />
+	</File>
+</CodeBlocks_layout_file>

@@ -1,0 +1,59 @@
+
+#include "TransactionTest.h"
+
+
+string BuildTransactionTest::BuildISOTransaction(hasresult &hResult,hasresult &hResult48,hasresult &hResult114)
+{
+    string sPos="2,3,4,6,7,8,11,12,13,14,17,18,21,22,23,24,25,26,30,32,33,35,37,38,39,41,42,43,44,45,46,47,48,52,53,54,55,56,57,58,59,62,63,64,68,72,74,97,101,102,103,104,105,106,107,111,112,113,114,120,121,128";
+
+	string sName="de-002,de-003,de-004,de-006,de-007,de-008,de-011,de-012,de-013,de-014,de-017,de-018,de-021,de-022,de-023,de-024,de-025,de-026,de-030,de-032,de-033,de-035,de-037,de-038,de-039,de-041,de-042,de-043,de-044,de-045,de-046,de-047,de-048,de-052,de-053,de-054,de-055,de-056,de-057,de-058,de-059,de-062,de-063,de-064,de-068,de-072,de-074,de-097,de-101,de-102,de-103,de-104,de-105,de-106,de-107,de-111,de-112,de-113,de-114,de-120,de-121,de-128";
+
+	string sType="llvar,fix,fix,fix,fix,fix,fix,fix,fix,fix,fix,lllvar,fix,bfix,fix,fix,fix,fix,fix,llvar,llvar,llvar,fix,fix,fix,llvar,llvar,bllllvar,llvar,llvar,lllvar,lllvar,llllvar,fix,fix,lllvar,lllvar,llvar,llvar,llvar,llvar,lllvar,lllvar,bfix,fix,bllllvar,fix,fix,llvar,llvar,llvar,fix,fix,lllvar,blllvar,bllllvar,bllllvar,fix,llllvar,llllvar,llllvar,bfix";
+
+	string sLength="19,6,16,16,10,12,12,14,6,4,4,140,22,16,3,3,4,4,32,11,11,37,12,6,4,99,99,9999,25,76,216,999,9999,16,18,126,999,41,50,99,999,999,999,4,9,9999,78,21,99,28,28,6,6,999,999,9999,9999,11,9999,9999,9999,16";
+
+	string sTyDa="n,ans,n,n,n,n,n,n,n,n,n,ans,ans,b,n,n,n,n,n,n,n,ans,ans,ans,ans,ans,ans,b,ans,ans,ans,ans,b,n,n,ans,ans,ans,ans,ans,ans,ans,ans,b,ans,b,n,n,ans,ans,ans,n,n,ans,b,b,b,n,ans,ans,ans,b";
+
+	string sPos114="23,24,43,60,82,83,84,85,86,87,106,108,109,110,111,112,115,121,144,145";
+	string sName114="de-023,de-024,de-043,de-060,de-082,de-083,de-084,de-085,de-086,de-087,de-106,de-108,de-109,de-110,de-111,de-112,de-115,de-121,de-144,de-145";
+	string sType114="llvar,llvar,llvar,fix,llvar,llvar,llvar,fix,llvar,fix,llvar,llvar,fix,llvar,fix,fix,fix,fix,fix,fix";
+	string sLength114="20,20,50,11,99,99,40,2,20,5,99,40,2,20,3,1,11,11,10,10";
+	string sTyDa114="ans,ans,ans,n,ans,ans,ans,ans,ans,ans,ans,ans,ans,ans,ans,n,n,n,n,n";
+
+	string sPos48 = "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,25,26";
+	string sName48 = ",de-002,de-003,de-004,de-005,de-006,de-007"
+					 ",de-008,de-009,de-010,de-011,de-012,de-013"
+					 ",de-014,de-015,de-016,de-025,de-026";
+	string sType48 = "llvar,fix,fix,fix,llvar,llvar,llvar,llvar,llvar"
+					 ",llvar,llvar,llvar,fix,llvar,llvar,blllvar,fix";
+	string sLength48 = "99,1,5,1,20,20,99,99,10,20,20,20,1,40,30,255,10";
+	string sTyDa48 = "ans,n,n,ans,ans,ans,ans,ans,ans,ans,ans,ans,n,ans,ans,b,n";
+
+
+    IsoParser myiso( sPos,sName,sType,sLength,sTyDa);
+    IsoParser myiso48(sPos48,sName48,sType48,sLength48,sTyDa48);
+    IsoParser myiso114( sPos114,sName114,sType114,sLength114,sTyDa114);
+
+    string p114="";
+    string sFormatedRsp = "";
+    string p48="";
+
+	//check if its necessary add field 48
+    if(!hResult48.empty())
+    {
+        myiso48.GetFormatedRspSub48(p48, "48", hResult48, 1);
+        hResult["48"]=p48;
+    }
+
+    //check if its necessary add field 114
+    if(!hResult114.empty())
+    {
+        myiso114.GetFormatedRspSub(p114, "114", hResult114, 1);
+        hResult["114"]=p114;
+    }
+
+    myiso.GetFormatedRsp(sFormatedRsp, "", hResult, 1);
+
+    return sFormatedRsp;
+}
+

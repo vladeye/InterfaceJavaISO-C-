@@ -1,0 +1,104 @@
+#pragma once
+
+
+#include <string>
+#include <iostream>
+#include <sstream>
+#include <fstream>
+#include <hash_map>
+
+#define LEN_BYTE	8
+#define VERBOSE true
+//#define VERBOSE_BASIC true
+#define VERBOSE_IMP true
+
+typedef unsigned char byte;
+
+using namespace std;
+using namespace __gnu_cxx;
+
+class IsoObj {
+public:
+	string sType;
+	int iLength;
+	string sData;
+	string sName;
+	string sTyDa;
+};
+
+#ifndef ltstrh_H_
+#define ltstrh_H_
+class stringhasher //: public stdext::hash_compare <std::string>
+{
+public:
+  size_t operator() (const std::string& s) const
+  {
+	//return (size_t)1;
+	//return (size_t)atoi(s.c_str());
+	return (size_t)s.size();
+  }
+
+  bool operator() (const std::string& s1, const std::string& s2) const
+  {
+    return s1 < s2;
+  }
+};
+#endif
+
+typedef hash_map< string, IsoObj, stringhasher > hashmap;
+typedef hash_map< string, string, stringhasher > hasresult;
+
+
+class IsoParser
+{
+public:
+
+	IsoParser(string sPos, string sName, string sType, string sLength, string sTyDa);
+	IsoParser(string isoData[][5], int aSize);
+	IsoParser(void);
+	~IsoParser(void);
+	hashmap IsoCmp;
+	vector<string> vElements;
+	hasresult hMessSec;
+	template <class T>
+	bool from_string(T& t, const std::string& s, std::ios_base& (*f)(std::ios_base&));
+	template <typename T>
+	string NumToStr(T number);
+	bool ParseFromASCII(string sData);
+	bool ParseFromASCIISubField(string sData);
+	bool ParseField(IsoObj &isObj, string buf, int &offset, int iLen);
+
+	char XtoC(int x);
+	char CtoX(char x[]);
+	string B(string buf, int off, int len);
+
+	string ReadFixRaw(string buf, int &offset, int len);
+	string ReadVar2Raw(string buf, int &offset, int unused);
+	string ReadVar3Raw(string buf, int &offset, int unused);
+	string ReadVar4Raw(string buf, int &offset, int unused);
+	string ReadVar2Packed(string buf, int &offset, int unused);
+	string ReadVar3Packed(string buf, int &offset, int unused);
+	string ReadVar4Packed(string buf, int &offset, int unused);
+	string ReadFixPacked(string buf, int &offset, int len);
+	string GetField(int iIndex);
+	bool GetFormatedStr(string &sForStr, string sWElem);
+	bool GetFormatedStrSub(string &sForStr, string sWElem, string sAnt, int iPAdd);
+    bool GetFormatedRspSub48(string &sForStr, string sWElem, hasresult &hCont, int iPAdd);
+
+	bool GetFormatedRsp( string &sForStr, string sWElem, hasresult hCont, int iPAdd);
+	bool GetFormatedRspSub(string &sForStr, string sWElem, hasresult &hCont, int iPAdd);
+	bool PackField(IsoObj isObj, string &buf, string sData, int iLen);
+	bool WriteFixRaw(string &buf, string sData, string sTyDa, int iLen);
+	bool WriteVar2Raw(string &buf, string sData, string sTyDa, int iLen);
+	bool WriteVar3Raw(string &buf, string sData, string sTyDa, int iLen);
+	bool WriteVar4Raw(string &buf, string sData, string sTyDa, int iLen);
+	bool WriteVar2Packed(string &buf, string sData, string sTyDa, int iLen);
+	bool WriteVar3Packed(string &buf, string sData, string sTyDa, int iLen);
+	bool WriteVar4Packed(string &buf, string sData, string sTyDa, int iLen);
+	bool WriteFixPacked(string &buf, string sData, string sTyDa, int iLen);
+	int SetBitmaps(byte * primaryBitmap, byte * secondaryBitmap, byte * tertiaryBitmap, string sKey);
+	bool ParseFromASCIIB(string sData);
+	bool ParseFromASCIISubFieldB(string sData);
+	static string OrganizeStrIsoData(string isoData[][5], int aSize, int iIndex);
+
+};

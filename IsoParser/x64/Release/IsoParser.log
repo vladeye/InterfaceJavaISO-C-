@@ -1,0 +1,30 @@
+﻿Build started 11/03/2013 09:54:26 a.m..
+     1>Project "F:\projects\tycoon\InterfaceJavaISO\IsoParser\IsoParser.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Touching "x64\Release\IsoParser.unsuccessfulbuild".
+       GenerateTargetFrameworkMonikerAttribute:
+       Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
+       ClCompile:
+         All outputs are up-to-date.
+         All outputs are up-to-date.
+         All outputs are up-to-date.
+       ResourceCompile:
+         All outputs are up-to-date.
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\Lib.exe /OUT:"F:\projects\tycoon\InterfaceJavaISO\IsoParser\x64\Release\IsoParser.lib" /NOLOGO /MACHINE:X64 x64\Release\app.res
+         x64\Release\AssemblyInfo.obj
+         x64\Release\IsoParser.obj
+         x64\Release\Stdafx.obj
+         x64\Release\utility.obj
+         "x64\Release\.NETFramework,Version=v4.0.AssemblyAttributes.obj"
+     1>.NETFramework,Version=v4.0.AssemblyAttributes.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+     1>AssemblyInfo.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+         IsoParser.vcxproj -> F:\projects\tycoon\InterfaceJavaISO\IsoParser\x64\Release\IsoParser.lib
+       FinalizeBuildStatus:
+         Deleting file "x64\Release\IsoParser.unsuccessfulbuild".
+         Touching "x64\Release\IsoParser.lastbuildstate".
+     1>Done Building Project "F:\projects\tycoon\InterfaceJavaISO\IsoParser\IsoParser.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.18

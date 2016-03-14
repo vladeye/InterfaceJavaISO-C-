@@ -1,0 +1,12 @@
+#include "BuildISO.h"
+
+#ifndef __BUILD_TRANSACTION_TEST_H__
+#define __BUILD_TRANSACTION_TEST_H__
+
+class BuildTransactionTest : public BuildISO
+{
+    public:
+        string BuildISOTransaction(hasresult &hResult,hasresult &hResult48,hasresult &hResult114);
+};
+
+#endif

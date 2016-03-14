@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Release" />
+	<File name="ApiSocket.cpp" open="0" top="0" tabpos="4">
+		<Cursor position="1738" topLine="69" />
+	</File>
+	<File name="ApiSocket.h" open="0" top="0" tabpos="7">
+		<Cursor position="92" topLine="10" />
+	</File>
+	<File name="CodeFieldsTransaction.h" open="1" top="0" tabpos="6">
+		<Cursor position="4232" topLine="129" />
+	</File>
+	<File name="CoreTransaction.cpp" open="1" top="0" tabpos="5">
+		<Cursor position="5616" topLine="58" />
+	</File>
+	<File name="CoreTransaction.h" open="0" top="0" tabpos="8">
+		<Cursor position="1975" topLine="0" />
+	</File>
+	<File name="IDTransactions.h" open="1" top="1" tabpos="1">
+		<Cursor position="23644" topLine="406" />
+	</File>
+	<File name="InterfaceJavaISO.cpp" open="1" top="0" tabpos="2">
+		<Cursor position="53508" topLine="1247" />
+	</File>
+	<File name="InterfaceJavaISO.h" open="1" top="0" tabpos="7">
+		<Cursor position="236" topLine="12" />
+	</File>
+	<File name="IsoParser.h" open="0" top="0" tabpos="0">
+		<Cursor position="175" topLine="3" />
+	</File>
+	<File name="NMCLog.cpp" open="0" top="0" tabpos="6">
+		<Cursor position="179" topLine="0" />
+	</File>
+	<File name="NMCLog.h" open="0" top="0" tabpos="7">
+		<Cursor position="156" topLine="0" />
+	</File>
+	<File name="Transactions.cpp" open="1" top="0" tabpos="4">
+		<Cursor position="2621" topLine="96" />
+	</File>
+	<File name="Transactions.h" open="1" top="0" tabpos="3">
+		<Cursor position="76093" topLine="2426" />
+	</File>
+	<File name="UnpackJson.cpp" open="0" top="0" tabpos="7">
+		<Cursor position="11729" topLine="301" />
+	</File>
+	<File name="UnpackJson.h" open="0" top="0" tabpos="6">
+		<Cursor position="2916" topLine="113" />
+	</File>
+	<File name="buildJson.cpp" open="0" top="0" tabpos="6">
+		<Cursor position="18" topLine="15" />
+	</File>
+	<File name="buildJson.h" open="0" top="0" tabpos="6">
+		<Cursor position="10529" topLine="446" />
+	</File>
+	<File name="http_handler.cpp" open="0" top="0" tabpos="3">
+		<Cursor position="3536" topLine="223" />
+	</File>
+	<File name="http_handler.h" open="0" top="0" tabpos="4">
+		<Cursor position="1273" topLine="33" />
+	</File>
+	<File name="tools.cpp" open="0" top="0" tabpos="7">
+		<Cursor position="3326" topLine="124" />
+	</File>
+	<File name="tools.h" open="0" top="0" tabpos="0">
+		<Cursor position="545" topLine="10" />
+	</File>
+</CodeBlocks_layout_file>

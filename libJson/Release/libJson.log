@@ -1,0 +1,22 @@
+﻿Build started 10/03/2013 03:45:15 p.m..
+     1>Project "F:\projects\tycoon\InterfaceJavaISO\libJson\libJson.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Touching "Release\libJson.unsuccessfulbuild".
+       GenerateTargetFrameworkMonikerAttribute:
+       Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
+       ClCompile:
+         All outputs are up-to-date.
+         All outputs are up-to-date.
+       ResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"F:\projects\tycoon\InterfaceJavaISO\libJson\Release\libJson.dll" /INCREMENTAL:NO /NOLOGO /LIBPATH:"F:\projects\hostt\ACE-6.1.7\ACE_wrappers\lib" ACE.lib /MANIFEST /ManifestFile:"Release\libJson.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"F:\projects\tycoon\InterfaceJavaISO\libJson\Release\libJson.pdb" /TLBID:1 /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 /DLL Release\app.res
+         Release\ApiSocket.obj
+         Release\libJson.obj
+         "Release\.NETFramework,Version=v4.0.AssemblyAttributes.obj"
+     1>ACE.lib(ACE.dll) : fatal error LNK1112: module machine type 'x64' conflicts with target machine type 'X86'
+     1>Done Building Project "F:\projects\tycoon\InterfaceJavaISO\libJson\libJson.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:02.74

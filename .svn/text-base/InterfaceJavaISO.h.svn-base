@@ -1,0 +1,31 @@
+#ifndef __MAIN_H__
+#define __MAIN_H__
+
+#include <windows.h>
+#include <jni.h>
+
+/*  To use this exported function of dll, include this header
+ *  in your project.
+ */
+
+#ifdef __cplusplus
+extern "C"
+{
+#endif
+
+
+
+/*
+ * Class:     InterfaceJava
+ * Method:    QRCode
+ *	jobjectArray Fields		: fields
+ */
+JNIEXPORT jcharArray JNICALL Java_InterfaceJavaISO_NMC_BuildIsoMessage
+  (JNIEnv *env, jobject obj, jobjectArray Fields);
+
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif // __MAIN_H__
